@@ -1,10 +1,16 @@
+# This script automates the setup of a Next.js powered website.
+
+# Quickstart the Next.js project and install npm dependencies
 git clone https://github.com/w11dcard/boilerplate-next .
 git remote remove origin
 Remove-Item README.md
 New-Item .env
 npm install
 
+# Set GitHub repository name from user input
 $repoName = Read-Host -Prompt "Enter GitHub repository name"
+
+# Create a new GitHub repository using GitHub API. For the initial commit, run the initial-commit.ps1 script.
 $jsonData = @{
     name = $repoName
     private = $true

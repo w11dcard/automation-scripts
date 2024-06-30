@@ -1,7 +1,7 @@
 # Set GitHub username from environment variable
 $githubUsername = $env:GITHUB_USERNAME
 
-# Prompt for GitHub repository name
+# Set GitHub repository name from user input
 $repoName = Read-Host -Prompt "Enter GitHub repository name"
 
 # Set the repository URL using GitHub username & GitHub repository name
