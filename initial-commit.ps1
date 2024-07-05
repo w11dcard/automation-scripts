@@ -1,3 +1,9 @@
+# Remove existing .git folder (if it exists)
+Remove-Item -Recurse -Force .git
+
+# Initialize a new Git repository
+git init
+
 # Set GitHub username from environment variable
 $githubUsername = $env:GITHUB_USERNAME
 
