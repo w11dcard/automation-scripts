@@ -28,4 +28,9 @@ $headers = @{
     Accept        = "application/vnd.github.v3+json"
 }
 
-Invoke-RestMethod -Uri "https://api.github.com/user/repos" -Method Post -Headers $headers -Body $jsonData
+$response = Invoke-RestMethod -Uri "https://api.github.com/user/repos" -Method Post -Headers $headers -Body $jsonData
+
+# Add the remote origin
+$cloneUrl = $response.clone_url
+git remote add origin $cloneUrl
+git remote -v
