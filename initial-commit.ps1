@@ -1,17 +1,11 @@
-# Remove existing .git folder (if it exists)
-Remove-Item -Recurse -Force .git
+# This script creates an initial commit of a project to a GitHub repository, with the "Initial Commit" message
 
-# Initialize a new Git repository
-git init
-
-# Set GitHub username from environment variable
-$githubUsername = $env:GITHUB_USERNAME
-
-# Set GitHub repository name from user input
-$repoName = Read-Host -Prompt "Enter GitHub repository name"
+# Get the repository URL from the .git folder and the GitHub username from the environment variable
+$repoUrl = git config --get remote.origin.url
+$githubToken = $env:GITHUBTOKEN
 
 # Set the repository URL using GitHub username & GitHub repository name
-$repoUrl = "https://github.com/$githubUsername/$repoName.git"
+$repoUrl = "https://$githubToken@github.com/$repoName.git"
 
 # Add the remote origin, add files, commit, and push to main branch
 git remote add origin $repoUrl
