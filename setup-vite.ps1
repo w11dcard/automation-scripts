@@ -1,4 +1,4 @@
-# This script automates the setup of a Vite-powered website
+# Quickstart and setup a Vite-powered web project
 
 # Create a new Vite project using the boilerplate repository
 $projectName = Read-Host -Prompt "Enter the name for the project"

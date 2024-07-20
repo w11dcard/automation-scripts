@@ -1,4 +1,4 @@
-# This script automates the setup of a Next.js-powered website
+# Quickstart and setup a Next.js-powered web project
 
 # Create a new Next.js project using the boilerplate repository
 $projectName = Read-Host -Prompt "Enter the name for the project"

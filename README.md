@@ -1,12 +1,13 @@
-# Automation Scripts
+# Automation Scripts 🔧
 
 PowerShell scripts for automating repetitive development tasks.
 
 ## Scripts Overview
 
-- **setup-nextjs.ps1:** Script for creating a Next.js website.
-- **setup-vite.ps1:** Script for creating a Vite website.
-- **initial-commit.ps1:** Script for making an initial commit to a GitHub repository.
+- **setup-nextjs.ps1:** Quickstart and setup a Vite-powered web project.
+- **setup-vite.ps1:** Quickstart and setup a Vite-powered web project.
+- **initial-commit.ps1:** Make an initial commit to a GitHub repository.
+- **tree.ps1:** Custom implementation of the `tree` command for Windows, excluding large files.
 
 ## Getting Started
 
